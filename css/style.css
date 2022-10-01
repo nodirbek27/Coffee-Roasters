@@ -36,6 +36,7 @@
   --brown: #C99B67;
   --brown-80: rgba(201, 155, 103, 0.8);
   --brown-60: rgba(201, 155, 103, 0.6);
+  --light-bg: #F8F8F2;
   --outline-color: var(--green)
 }
 
@@ -117,6 +118,8 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* SITE_HEADER_HERO_WRAPPER */
@@ -129,10 +132,11 @@ img {
 }
 
 .site-header-container {
-  padding: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .site-header-logo-link {
@@ -184,6 +188,8 @@ img {
   opacity: 0.6;
 }
 
+
+/* HERO */
 .hero-container {
   display: flex;
   padding-left: 0;
@@ -223,6 +229,7 @@ img {
 }
 
 .hero-img {
+  display: flex;
   width: 710px;
   height: 596px;
   object-fit: cover;
@@ -238,4 +245,72 @@ img {
   top: -80px;
   width: 160px;
   height: 160px;
+}
+
+
+/* COLLECTION */
+.index-collection-inner {
+  padding: 50px 143px;
+  background-color: var(--light-bg);
+  background-image: url(../img/collaction.jpg);
+}
+
+.index-collection-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.index-collection-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.index-collection-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.index-collection-img {
+  flex-shrink: 0;
+  display: flex;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+}
+
+.index-collection-info {
+  flex-grow: 1;
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+.index-collection-info-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+.index-collection-info-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34px;
+  color: var(--text-color);
+}
+
+.index-collection-info-text:not(:last-child) {
+  margin-bottom: 10px;
 }
